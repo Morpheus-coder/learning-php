@@ -4,51 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bài form</title>
+    <link href="css/bai2.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Đăng ký tài khoản!!!</h1>
-    <p>Nhập và lựa chọn thông tin đăng ký</p>
-    <form>
-      <input type="text" id="firstname" name="firstname" placeholder="Tên" />
-      <input
-        type="text"
-        id="lastname"
-        name="lastname"
-        placeholder="Họ đệm"
-      /><br /><br />
-      <input type="text" id="email" name="email" placeholder="Địa chỉ Email" />
-      <input
-        type="text"
-        id="phonenumber"
-        name="phonenumber"
-        placeholder="SĐT"
-      /><br /><br />
+    <div class="form-container">
+      <h1>Đăng ký tài khoản!!!</h1>
+      <p>Nhập và lựa chọn thông tin đăng ký</p>
 
-      <label>Chọn thành phố</label>
-      <select>
-        <option value="" disabled selected>Tỉnh</option>
-        <option value="Hanoi">Hà Nội</option>
-        <option value="Hanoi">Hải Dương</option>
-        <option value="Hanoi">Hải Phòng</option>
-        <option value="Hanoi">Hà Giang</option>
-        <option value="Hanoi">Quảng Ninh</option>
-        <option value="Hanoi">Hưng Yên</option>
-        <option value="Hanoi">Vĩnh Phúc</option>
-        <option value="Hanoi">Phú Thọ</option>
-        <option value="Hanoi">Nha Trang</option>
-      </select>
-      <br /><br />
+      <form>
+        <div class="row">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Tên"
+          />
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Họ đệm"
+          />
+        </div>
 
-      <textarea
-        id="node"
-        name="node"
-        rows="10"
-        cols="50"
-        placeholder="Ghi chú"
-      ></textarea>
-      <br /><br />
+        <div class="row">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Địa chỉ Email"
+          />
+          <input
+            type="text"
+            id="phonenumber"
+            name="phonenumber"
+            placeholder="SĐT"
+          />
+        </div>
 
-      <input type="button" id="btndangki" name="dangky" value="Đăng ký" />
-    </form>
+        <label>Chọn thành phố</label>
+        <select>
+          <option value="" disabled selected>Tỉnh</option>
+          <option>Hà Nội</option>
+          <option>Hải Dương</option>
+          <option>Hải Phòng</option>
+          <option>Hà Giang</option>
+          <option>Quảng Ninh</option>
+          <option>Hưng Yên</option>
+          <option>Vĩnh Phúc</option>
+          <option>Phú Thọ</option>
+          <option>Nha Trang</option>
+        </select>
+
+        <textarea
+          id="node"
+          name="node"
+          rows="6"
+          placeholder="Ghi chú"
+        ></textarea>
+
+        <input type="button" id="btndangki" value="Đăng ký" />
+      </form>
+    </div>
   </body>
 </html>
